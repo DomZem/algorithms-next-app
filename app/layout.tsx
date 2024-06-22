@@ -26,7 +26,7 @@ export default function RootLayout({
 							<h1 className='font-bold text-2xl'>Algorithms</h1>
 						</div>
 
-						<nav>
+						<nav className='hidden lg:block'>
 							<ul className='p-2 bg-gray-700 rounded-[30px] flex gap-3'>
 								<NavLink title='Sieve' href='/' />
 								<NavLink title='Third degree equation' href='/third-degree-equation' />
@@ -37,7 +37,7 @@ export default function RootLayout({
 						</nav>
 					</header>
 
-					<main className='p-4'>{children}</main>
+					<main className='grid grid-cols-2 gap-4 p-4'>{children}</main>
 				</div>
 			</body>
 		</html>

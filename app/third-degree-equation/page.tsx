@@ -1,7 +1,5 @@
+import { ThirdDegreeEquationContent } from '@/components/features/third-degree-equation/ThirdDegreeEquationContent';
+
 export default function ThirdDegreeEquationPage() {
-	return (
-		<div>
-			<div>3rd Degree Equation</div>
-		</div>
-	);
+	return <ThirdDegreeEquationContent />;
 }

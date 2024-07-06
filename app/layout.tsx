@@ -26,13 +26,11 @@ export default function RootLayout({
 							<h1 className='font-bold text-2xl'>Algorithms</h1>
 						</div>
 
-						<nav className='hidden lg:block'>
+						<nav className='lg:block'>
 							<ul className='p-2 bg-gray-700 rounded-[30px] flex gap-3'>
 								<NavLink title='Third degree equation' href='/third-degree-equation' />
 								<NavLink title='Sieve' href='/' />
 								<NavLink title='Fifth degree equation' href='/fifth-degree-equation' />
-								<NavLink title='Traveling salesman' href='/traveling-salesman' />
-								<NavLink title='Integration' href='/integration' />
 							</ul>
 						</nav>
 					</header>

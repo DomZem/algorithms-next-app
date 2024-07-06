@@ -26,7 +26,7 @@ export const ThirdDegreeEquationContent = () => {
 					<ul>
 						{roots.map((root, index) => (
 							<li key={index}>
-								x<sub>{index + 1}</sub> = {root}
+								x<sub>{index + 1}</sub> = {root.toFixed(4)}
 							</li>
 						))}
 					</ul>

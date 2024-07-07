@@ -28,6 +28,10 @@ const thirdDegreeEquationSchema = z.object({
 type ThirdDegreeEquation = z.infer<typeof thirdDegreeEquationSchema>;
 
 const calculateCubicRoots = (a: number, b: number, c: number, d: number): number[] => {
+	if (a === 0) {
+		throw new Error('A cannot be equal to 0');
+	}
+
 	const w = -(b / (3 * a));
 	const p = (3 * a * Math.pow(w, 2) + 2 * b * w + c) / a;
 	const q = a * Math.pow(w, 3) + b * Math.pow(w, 2) + c * w + d;

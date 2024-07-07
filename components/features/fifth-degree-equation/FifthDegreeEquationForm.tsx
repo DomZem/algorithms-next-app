@@ -39,19 +39,19 @@ const newtonMethod = (coeffs: FifthDegreeEquation, initialGuess: number, toleran
 
 	for (let i = 0; i < maxIter; i++) {
 		const y = fx(x);
-		const y_prime = fxPrime(x);
+		const yPrime = fxPrime(x);
 
-		if (Math.abs(y_prime) < tolerance) {
+		if (Math.abs(yPrime) < tolerance) {
 			break;
 		}
 
-		const x_new = x - y / y_prime;
+		const xNew = x - y / yPrime;
 
-		if (Math.abs(x_new - x) < tolerance) {
-			return x_new;
+		if (Math.abs(xNew - x) < tolerance) {
+			return xNew;
 		}
 
-		x = x_new;
+		x = xNew;
 	}
 
 	return null;
